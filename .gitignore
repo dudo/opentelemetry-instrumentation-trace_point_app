@@ -1,0 +1,8 @@
+.tool-versions
+.ruby-version
+
+.byebug_history
+.irb_history
+
+.bundle/**/*
+.env

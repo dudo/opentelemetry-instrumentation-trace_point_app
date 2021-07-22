@@ -1,0 +1,14 @@
+version: "3.8"
+# https://docs.docker.com/docker-for-mac/osxfs/
+services:
+  bundle:
+    env_file: .env
+    build: .
+    entrypoint: bundle
+    command: version
+    volumes:
+      - .:/usr/src/app:delegated
+      - bundle:/usr/local/bundle:delegated
+
+volumes:
+  bundle:
